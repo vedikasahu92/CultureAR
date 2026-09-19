@@ -1,0 +1,1494 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f5ef;
+  color: #24211d;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7%;
+  background: #fffdf9;
+  border-bottom: 1px solid #e8e1d7;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo span {
+  margin-right: 8px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 35px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #4b4741;
+  font-size: 15px;
+}
+
+.nav-links a:hover {
+  color: #9b4d25;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.language,
+.login-btn {
+  padding: 10px 17px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.language {
+  border: 1px solid #ddd3c7;
+  background: transparent;
+}
+
+.login-btn {
+  border: none;
+  background: #9b4d25;
+  color: white;
+}
+
+
+/* HERO */
+
+.hero {
+  min-height: 570px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 70px 8%;
+  gap: 50px;
+}
+
+.hero-content {
+  max-width: 620px;
+}
+
+.small-title {
+  color: #9b4d25;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 22px;
+}
+
+.hero h1 {
+  font-size: 64px;
+  line-height: 1.05;
+  margin-bottom: 25px;
+}
+
+.hero h1 span {
+  display: block;
+  color: #9b4d25;
+}
+
+.description {
+  color: #68625b;
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 560px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 32px;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 15px 24px;
+  border-radius: 9px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.primary-btn {
+  border: none;
+  background: #9b4d25;
+  color: white;
+}
+
+.secondary-btn {
+  border: 1px solid #b9aea1;
+  background: transparent;
+}
+
+
+/* HERO VISUAL */
+
+.hero-visual {
+  width: 390px;
+  height: 390px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid #d8c7b6;
+}
+
+.circle-one {
+  width: 370px;
+  height: 370px;
+}
+
+.circle-two {
+  width: 280px;
+  height: 280px;
+}
+
+.culture-card {
+  width: 230px;
+  height: 280px;
+  background: #fffdf9;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(60, 40, 20, 0.15);
+  padding: 30px;
+  text-align: center;
+  z-index: 2;
+}
+
+.card-icon {
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+
+.culture-card h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.culture-card p {
+  color: #77716a;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.culture-card span {
+  display: block;
+  margin-top: 20px;
+  color: #9b4d25;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.scan-line {
+  width: 100%;
+  height: 2px;
+  margin-top: 20px;
+  background: #9b4d25;
+}
+
+
+/* FEATURES */
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 30px 8% 60px;
+}
+
+.feature {
+  background: #fffdf9;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #e8e1d7;
+}
+
+.feature div {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.feature h3 {
+  margin-bottom: 8px;
+}
+
+.feature p {
+  color: #77716a;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+  .nav-links {
+    display: none;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 45px;
+  }
+
+  .description {
+    margin: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .features {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .hero {
+    padding: 50px 5%;
+  }
+
+  .hero-visual {
+    width: 300px;
+    height: 300px;
+  }
+
+  .circle-one {
+    width: 290px;
+    height: 290px;
+  }
+
+  .circle-two {
+    width: 220px;
+    height: 220px;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+}
+/* ================= HOME CHATBOT FULL SCREEN ================= */
+
+.home-chatbot-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background: white;
+
+  z-index: 99999;
+
+  overflow: hidden;
+}
+
+/* Chatbot page inside overlay */
+
+.home-chatbot-overlay .chatbot-page {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  min-height: 100vh;
+
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+
+  background: linear-gradient(135deg, #fff7ed, #fef3c7);
+}
+
+/* Chatbot container */
+
+.home-chatbot-overlay .chatbot-container {
+  width: 100%;
+  max-width: none;
+
+  height: 100vh;
+
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* Close button */
+
+.home-chatbot-close {
+  position: fixed;
+
+  top: 18px;
+  right: 25px;
+
+  width: 38px;
+  height: 38px;
+
+  z-index: 100000;
+
+  border: none;
+  border-radius: 50%;
+
+  background: rgba(0, 0, 0, 0.25);
+  color: white;
+
+  font-size: 20px;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.2s ease;
+}
+
+.home-chatbot-close:hover {
+  background: rgba(0, 0, 0, 0.5);
+  transform: scale(1.05);
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  .home-chatbot-close {
+    top: 12px;
+    right: 12px;
+  }
+
+}
+
+/* =========================================================
+   CULTUREAR HOMEPAGE - HERO ANIMATED CARDS
+========================================================= */
+
+.hero-visual {
+  position: relative;
+  width: 52%;
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* ================= ROTATING CIRCLES ================= */
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(217, 107, 39, 0.25);
+  pointer-events: none;
+}
+
+.circle-one {
+  width: 430px;
+  height: 430px;
+  animation: rotateCircle 18s linear infinite;
+}
+
+.circle-two {
+  width: 330px;
+  height: 330px;
+  animation: rotateCircleReverse 14s linear infinite;
+}
+
+@keyframes rotateCircle {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateCircleReverse {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+
+/* =========================================================
+   HERITAGE CAROUSEL
+========================================================= */
+
+.heritage-carousel {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1200px;
+}
+
+
+/* ================= COMMON CARD ================= */
+
+.heritage-card {
+  position: absolute;
+  width: 230px;
+  height: 350px;
+  border-radius: 24px;
+  overflow: hidden;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.20);
+
+  transition:
+    transform 0.6s ease,
+    opacity 0.6s ease,
+    filter 0.6s ease;
+
+  border: 4px solid rgba(255, 255, 255, 0.8);
+}
+
+
+/* ================= CARD IMAGE ================= */
+
+/* .heritage-card-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.heritage-card-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition: transform 0.8s ease;
+} */
+
+/* ================= CARD IMAGE ================= */
+
+.heritage-card-image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  overflow: hidden;
+  background: #eee;
+  border-radius: 18px 18px 0 0;
+}
+
+.heritage-card-image img,
+.heritage-card-image video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border: none;
+  transition: transform 0.8s ease;
+}
+
+/* ================= DARK OVERLAY ================= */
+
+.heritage-card::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.82),
+      rgba(0, 0, 0, 0.10) 65%,
+      rgba(0, 0, 0, 0.02)
+    );
+
+  z-index: 1;
+}
+
+
+/* ================= CARD CONTENT ================= */
+
+.heritage-card-content {
+  position: absolute;
+
+  left: 22px;
+  right: 22px;
+  bottom: 22px;
+
+  color: white;
+
+  z-index: 2;
+}
+
+.heritage-card-content span {
+  display: block;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 7px;
+
+  opacity: 0.85;
+}
+
+.heritage-card-content h3 {
+  margin: 0;
+
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.heritage-card-content p {
+  margin: 8px 0 0;
+
+  font-size: 13px;
+  line-height: 1.5;
+
+  opacity: 0.9;
+}
+
+
+/* ================= CARD ICON ================= */
+
+.card-icon {
+  font-size: 32px !important;
+  margin-bottom: 6px;
+}
+
+
+/* =========================================================
+   CARD POSITIONS
+========================================================= */
+
+/* LEFT SMALL */
+
+.card-left-small {
+  transform:
+    translateX(-300px)
+    scale(0.72)
+    rotateY(12deg);
+
+  opacity: 0.45;
+
+  filter: brightness(0.7);
+
+  z-index: 1;
+}
+
+
+/* LEFT */
+
+.card-left {
+  transform:
+    translateX(-190px)
+    scale(0.86)
+    rotateY(10deg);
+
+  opacity: 0.72;
+
+  filter: brightness(0.82);
+
+  z-index: 2;
+}
+
+
+/* CENTER */
+
+.card-center {
+  transform:
+    translateX(0)
+    scale(1.08);
+
+  opacity: 1;
+
+  z-index: 5;
+
+  box-shadow:
+    0 30px 70px rgba(0, 0, 0, 0.30);
+}
+
+
+/* RIGHT */
+
+.card-right {
+  transform:
+    translateX(190px)
+    scale(0.86)
+    rotateY(-10deg);
+
+  opacity: 0.72;
+
+  filter: brightness(0.82);
+
+  z-index: 2;
+}
+
+
+/* RIGHT SMALL */
+
+.card-right-small {
+  transform:
+    translateX(300px)
+    scale(0.72)
+    rotateY(-12deg);
+
+  opacity: 0.45;
+
+  filter: brightness(0.7);
+
+  z-index: 1;
+}
+
+
+/* =========================================================
+   CENTER CARD HOVER
+========================================================= */
+
+.card-center:hover {
+  transform:
+    translateX(0)
+    scale(1.12);
+}
+
+.card-center:hover img {
+  transform: scale(1.08);
+}
+
+
+/* =========================================================
+   SIDE CARD HOVER
+========================================================= */
+
+.card-left:hover,
+.card-right:hover {
+  filter: brightness(1);
+
+  opacity: 0.95;
+}
+
+.card-left:hover img,
+.card-right:hover img {
+  transform: scale(1.07);
+}
+
+
+/* =========================================================
+   AR SCAN LINE
+========================================================= */
+
+.card-scan-line {
+  position: absolute;
+
+  left: 0;
+  right: 0;
+
+  bottom: 95px;
+
+  height: 2px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 0 10px rgba(255, 255, 255, 0.9),
+    0 0 20px rgba(217, 107, 39, 0.8);
+
+  animation: scanMove 2.5s ease-in-out infinite;
+
+  opacity: 0.9;
+}
+
+@keyframes scanMove {
+
+  0% {
+    transform: translateY(-45px);
+    opacity: 0.2;
+  }
+
+  50% {
+    transform: translateY(45px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-45px);
+    opacity: 0.2;
+  }
+
+}
+
+
+/* ================= AR READY ================= */
+
+.ar-ready {
+  display: inline-block !important;
+
+  margin-top: 12px;
+
+  padding: 6px 12px;
+
+  border-radius: 20px;
+
+  background: rgba(217, 107, 39, 0.9);
+
+  font-size: 10px !important;
+
+  letter-spacing: 1.5px !important;
+
+  box-shadow:
+    0 5px 15px rgba(217, 107, 39, 0.35);
+}
+
+
+/* =========================================================
+   AUTO MOVING HERITAGE CARDS
+========================================================= */
+
+.heritage-carousel {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1200px;
+}
+
+/* ---------------- CENTER CARD ---------------- */
+
+.card-center {
+  animation: centerCardMove 8s ease-in-out infinite;
+}
+
+@keyframes centerCardMove {
+
+  0%,
+  20% {
+    transform: translateX(0) scale(1.08);
+    opacity: 1;
+  }
+
+  25%,
+  45% {
+    transform: translateX(0) scale(1.12);
+    opacity: 1;
+  }
+
+  50%,
+  100% {
+    transform: translateX(0) scale(1.08);
+    opacity: 1;
+  }
+
+}
+
+
+/* ---------------- LEFT CARD ---------------- */
+
+.card-left {
+  animation: leftCardMove 8s ease-in-out infinite;
+}
+
+@keyframes leftCardMove {
+
+  0%,
+  20% {
+    transform: translateX(-190px) scale(0.86) rotateY(10deg);
+    opacity: 0.72;
+  }
+
+  25%,
+  45% {
+    transform: translateX(-210px) scale(0.82) rotateY(10deg);
+    opacity: 0.65;
+  }
+
+  50%,
+  100% {
+    transform: translateX(-190px) scale(0.86) rotateY(10deg);
+    opacity: 0.72;
+  }
+
+}
+
+
+/* ---------------- RIGHT CARD ---------------- */
+
+.card-right {
+  animation: rightCardMove 8s ease-in-out infinite;
+}
+
+@keyframes rightCardMove {
+
+  0%,
+  20% {
+    transform: translateX(190px) scale(0.86) rotateY(-10deg);
+    opacity: 0.72;
+  }
+
+  25%,
+  45% {
+    transform: translateX(210px) scale(0.82) rotateY(-10deg);
+    opacity: 0.65;
+  }
+
+  50%,
+  100% {
+    transform: translateX(190px) scale(0.86) rotateY(-10deg);
+    opacity: 0.72;
+  }
+
+}
+
+
+/* ---------------- FAR LEFT CARD ---------------- */
+
+.card-left-small {
+  animation: leftSmallMove 8s ease-in-out infinite;
+}
+
+@keyframes leftSmallMove {
+
+  0%,
+  20% {
+    transform:
+      translateX(-300px)
+      scale(0.72)
+      rotateY(12deg);
+
+    opacity: 0.45;
+  }
+
+  25%,
+  45% {
+    transform:
+      translateX(-320px)
+      scale(0.68)
+      rotateY(12deg);
+
+    opacity: 0.35;
+  }
+
+  50%,
+  100% {
+    transform:
+      translateX(-300px)
+      scale(0.72)
+      rotateY(12deg);
+
+    opacity: 0.45;
+  }
+
+}
+
+
+/* ---------------- FAR RIGHT CARD ---------------- */
+
+.card-right-small {
+  animation: rightSmallMove 8s ease-in-out infinite;
+}
+
+@keyframes rightSmallMove {
+
+  0%,
+  20% {
+    transform:
+      translateX(300px)
+      scale(0.72)
+      rotateY(-12deg);
+
+    opacity: 0.45;
+  }
+
+  25%,
+  45% {
+    transform:
+      translateX(320px)
+      scale(0.68)
+      rotateY(-12deg);
+
+    opacity: 0.35;
+  }
+
+  50%,
+  100% {
+    transform:
+      translateX(300px)
+      scale(0.72)
+      rotateY(-12deg);
+
+    opacity: 0.45;
+  }
+
+}
+
+
+/* =========================================================
+   CENTER CARD GLOW
+========================================================= */
+
+.card-center {
+  box-shadow:
+    0 30px 70px rgba(0, 0, 0, 0.30),
+    0 0 35px rgba(217, 107, 39, 0.20);
+}
+
+
+/* =========================================================
+   SCAN LINE
+========================================================= */
+
+.card-scan-line {
+  animation: scanLineMove 2s ease-in-out infinite;
+}
+
+@keyframes scanLineMove {
+
+  0% {
+    transform: translateY(-35px);
+    opacity: 0.2;
+  }
+
+  50% {
+    transform: translateY(35px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-35px);
+    opacity: 0.2;
+  }
+
+}
+
+
+/* =========================================================
+   AR READY PULSE
+========================================================= */
+
+.ar-ready {
+  animation: arReadyPulse 1.8s ease-in-out infinite;
+}
+
+@keyframes arReadyPulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.06);
+  }
+
+}
+
+/* =========================================================
+   3 PICTURE FEATURED CULTURE SECTION
+========================================================= */
+
+.featured-culture-section {
+  width: 100%;
+
+  padding: 90px 6%;
+
+  box-sizing: border-box;
+
+  background: #faf7f2;
+}
+
+
+/* ================= SECTION HEADING ================= */
+
+.featured-culture-heading {
+  text-align: center;
+
+  margin-bottom: 45px;
+}
+
+.featured-culture-heading p {
+  margin: 0 0 10px;
+
+  color: #d96b27;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+.featured-culture-heading h2 {
+  margin: 0 0 12px;
+
+  font-size: 38px;
+
+  color: #2d211b;
+
+  font-weight: 700;
+}
+
+.featured-culture-heading span {
+  color: #777;
+
+  font-size: 16px;
+}
+
+
+/* ================= THREE CARDS ================= */
+
+.featured-culture-cards {
+  max-width: 1200px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+
+/* ================= IMAGE CARD ================= */
+
+.featured-culture-card {
+  position: relative;
+
+  height: 390px;
+
+  overflow: hidden;
+
+  border-radius: 22px;
+
+  text-decoration: none;
+
+  display: block;
+
+  background: #222;
+
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.15);
+
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+
+/* ================= CARD IMAGE ================= */
+
+.featured-culture-card img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition:
+    transform 0.6s ease;
+}
+
+
+/* ================= DARK OVERLAY ================= */
+
+.featured-culture-card::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.82),
+      rgba(0, 0, 0, 0.05)
+    );
+
+  z-index: 1;
+}
+
+
+/* ================= TEXT OVER IMAGE ================= */
+
+.featured-culture-overlay {
+  position: absolute;
+
+  left: 28px;
+  right: 28px;
+  bottom: 28px;
+
+  color: white;
+
+  z-index: 2;
+}
+
+.featured-culture-overlay span {
+  font-size: 12px;
+
+  letter-spacing: 2px;
+
+  opacity: 0.8;
+}
+
+.featured-culture-overlay h3 {
+  margin: 8px 0 6px;
+
+  font-size: 28px;
+
+  font-weight: 700;
+}
+
+.featured-culture-overlay p {
+  margin: 0;
+
+  font-size: 14px;
+
+  opacity: 0.85;
+}
+
+
+/* =========================================================
+   FEATURED CARD HOVER
+========================================================= */
+
+.featured-culture-card:hover {
+  transform:
+    translateY(-12px);
+
+  box-shadow:
+    0 25px 50px rgba(0, 0, 0, 0.25);
+}
+
+.featured-culture-card:hover img {
+  transform:
+    scale(1.08);
+}
+
+
+/* =========================================================
+   SMALL ORANGE LINE
+========================================================= */
+
+.featured-culture-card::before {
+  content: "";
+
+  position: absolute;
+
+  left: 28px;
+
+  bottom: 22px;
+
+  width: 45px;
+
+  height: 3px;
+
+  background: #d96b27;
+
+  border-radius: 5px;
+
+  z-index: 3;
+
+  transition:
+    width 0.4s ease;
+}
+
+.featured-culture-card:hover::before {
+  width: 80px;
+}
+
+
+/* =========================================================
+   RESPONSIVE DESIGN
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .hero-visual {
+    width: 50%;
+  }
+
+  .heritage-card {
+    width: 210px;
+    height: 320px;
+  }
+
+  .card-left-small {
+    transform:
+      translateX(-250px)
+      scale(0.65)
+      rotateY(12deg);
+  }
+
+  .card-left {
+    transform:
+      translateX(-155px)
+      scale(0.78)
+      rotateY(10deg);
+  }
+
+  .card-right {
+    transform:
+      translateX(155px)
+      scale(0.78)
+      rotateY(-10deg);
+  }
+
+  .card-right-small {
+    transform:
+      translateX(250px)
+      scale(0.65)
+      rotateY(-12deg);
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .hero-container {
+    flex-direction: column;
+  }
+
+  .hero-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-visual {
+    width: 100%;
+    min-height: 480px;
+  }
+
+
+  /* Featured culture */
+
+  .featured-culture-section {
+    padding: 70px 5%;
+  }
+
+  .featured-culture-heading h2 {
+    font-size: 30px;
+  }
+
+  .featured-culture-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-culture-card {
+    height: 350px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .hero-visual {
+    min-height: 390px;
+  }
+
+  .heritage-carousel {
+    height: 390px;
+  }
+
+  .heritage-card {
+    width: 190px;
+    height: 290px;
+  }
+
+
+  /* Hide far side cards */
+
+  .card-left-small,
+  .card-right-small {
+    display: none;
+  }
+
+
+  /* Move side cards closer */
+
+  .card-left {
+    transform:
+      translateX(-95px)
+      scale(0.72)
+      rotateY(8deg);
+  }
+
+  .card-right {
+    transform:
+      translateX(95px)
+      scale(0.72)
+      rotateY(-8deg);
+  }
+
+  .card-center {
+    transform:
+      translateX(0)
+      scale(0.95);
+  }
+
+
+  /* Featured section */
+
+  .featured-culture-section {
+    padding: 60px 5%;
+  }
+
+  .featured-culture-heading h2 {
+    font-size: 27px;
+  }
+
+  .featured-culture-heading span {
+    font-size: 14px;
+  }
+
+  .featured-culture-card {
+    height: 320px;
+  }
+
+  .featured-culture-overlay {
+    left: 22px;
+    right: 22px;
+    bottom: 22px;
+  }
+
+  .featured-culture-overlay h3 {
+    font-size: 25px;
+  }
+
+}
+/* =========================================================
+   CULTURE DETAILS - RECTANGULAR CARDS
+========================================================= */
+
+.culture-new-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.culture-new-card {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #fffdf9;
+}
+
+/* Image / Video area */
+
+.culture-card-image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  overflow: hidden;
+  background: #eee;
+  border-radius: 20px 20px 0 0;
+}
+
+.culture-card-image img,
+.culture-card-image video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Video label */
+
+.culture-video-label {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 5;
+  padding: 7px 12px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Mobile */
+
+@media (max-width: 900px) {
+  .culture-new-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .culture-new-grid {
+    grid-template-columns: 1fr;
+  }
+}
