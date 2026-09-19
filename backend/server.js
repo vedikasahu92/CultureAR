@@ -7,6 +7,7 @@ const cors = require("cors");
 const locationRoutes = require("./routes/locationroutes");
 const cultureRoutes = require("./routes/cultureroutes");
 const reviewRoutes = require("./routes/reviewroutes");
+
 const authRoutes = require("./routes/auth");
 const chatRoutes = require("./routes/chatroutes");
 const videoRoutes = require("./routes/videoRoutes");
@@ -55,7 +56,7 @@ mongoose
   .catch((err) => console.error("MongoDB Connection Error:", err.message));
 
 // Server Start
-const PORT = process.env.PORT;
+const PORT = 5000;
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });

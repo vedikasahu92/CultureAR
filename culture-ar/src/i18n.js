@@ -3,7 +3,7 @@ import { initReactI18next } from "react-i18next";
 
 const common = {
   chooseLanguage: "Choose language", siteName: "Culture Explorer", home: "Home", explore: "Explore", arExperience: "AR Experience", scanner: "Scanner", about: "About", tourPlan: "Tour Plan", login: "Login", logout: "Logout",
-  discoverDifferently: "✦ DISCOVER INDIA DIFFERENTLY", experienceCulture: "Experience India's Culture in AR", cultureDescription: "Explore the traditions, festivals, food, art and heritage of India's diverse states through an immersive augmented reality experience.", exploreCulture: "Explore Culture →", startARScan: "◉ Start AR Scan", travelGuide: "🧭 Travel Guide", leaveReview: "★ Leave a Review", askAIGuide: "🤖 Ask AI Guide", indianHeritage: "Indian Heritage", heritageCardDesc: "Discover monuments, traditions, festivals & more.", arReady: "AR READY", traditions: "Traditions", traditionsDesc: "Explore India's unique traditions.", festivals: "Festivals", festivalsDesc: "Discover festivals from every state.", food: "Food", foodDesc: "Explore India's diverse cuisines.", heritage: "Heritage", heritageDesc: "Experience heritage through AR.", startAR: "Start AR Experience", experienceHeritage: "EXPERIENCE HERITAGE", shareExperience: "SHARE YOUR EXPERIENCE", submitReview: "Submit Review",
+  discoverDifferently: "✦ DISCOVER INDIA DIFFERENTLY", experienceCulture: "Experience India's Culture", cultureDescription: "Explore the traditions, festivals, food, art and heritage of India's diverse states through an immersive augmented reality experience.", exploreCulture: "Explore Culture →", startARScan: "◉ Start AR Scan", travelGuide: "🧭 Travel Guide", leaveReview: "★ Leave a Review", askAIGuide: "🤖 Ask AI Guide", indianHeritage: "Indian Heritage", heritageCardDesc: "Discover monuments, traditions, festivals & more.", arReady: "AR READY", traditions: "Traditions", traditionsDesc: "Explore India's unique traditions.", festivals: "Festivals", festivalsDesc: "Discover festivals from every state.", food: "Food", foodDesc: "Explore India's diverse cuisines.", heritage: "Heritage", heritageDesc: "Experience heritage through AR.", startAR: "Start AR Experience", experienceHeritage: "EXPERIENCE HERITAGE", shareExperience: "SHARE YOUR EXPERIENCE", submitReview: "Submit Review",
   discoverDiversity: "Discover India's Cultural Diversity", diversityDescription: "Explore unique heritage, festivals, food, art and dance across Indian states.", searchState: "🔍 Search an Indian state...", loadingStates: "Loading States...", noState: "No state found 😕", exploreState: "Explore {{state}} →", stateCultureDescription: "Discover the culture, heritage, festivals, food and traditions of {{state}}.", discoverIndianCulture: "✦ DISCOVER INDIAN CULTURE", backExplore: "← Back to Explore", stateNotFound: "State Not Found", stateMissing: "Sorry, we couldn't find this state.", viewAR: "✦ View AR", viewMap: "🗺️ View Map", moreComing: "More {{category}} coming soon for {{state}}!", backToState: "← Back to {{state}}", culture: "Culture", music: "Music", arts: "Arts", dance: "Dance", art: "Art & Crafts", categoryCulture: "Understand the living culture and identity of the state.", categoryMusic: "Listen to folk, classical and devotional traditions.", categoryArts: "Discover local crafts, painting, textiles and design.", of: "of", itemDescription: "Explore the rich history, cultural importance, and geographic roots of {{item}} in {{state}}. This represents one of the signature cultural expressions preserved through traditions and community heritage.", culturalHighlights: "Cultural Highlights", rootedIdentity: "Deeply rooted in the identity and folklore of {{state}}.", celebratedEvents: "Celebrated during major cultural events and seasonal festivals.", preservedGenerations: "Preserved by local communities across generations.", visualizeItem: "Visualize {{item}} in interactive 3D / Augmented Reality space.", launchAR: "Launch AR View", locationMap: "Location & Map", primaryLocation: "Primary origin and landmark location for {{item}} ({{state}})", getDirections: "Get Directions",
   liveRecognition: "Live Monument Recognition", selectTarget: "Select Target Photo to Scan:", turnCameraOn: "📷 Turn ON Live Camera", pointCamera: "Point Camera at {{name}} Photo", scanning: "🔍 Scanning Image...", scanNow: "⚡ Scan Photo Now", turnCameraOff: "Turn Off Camera", matchFound: "MATCH FOUND ✅", stopListening: "⏹ Stop Listening", listenStory: "🔊 Listen Audio Story", historyDetails: "History & Details:",
   chooseGuide: "Choose Your Travel Guide", guideIntro: "Find a trusted local guide to make your journey through India personal, vivid and unforgettable.", availableToday: "Available today", topRated: "TOP RATED", yearsExperience: "{{years}} years experience", bookGuide: "Book Guide →", bookingSent: "Booking request sent to {{name}}.",
@@ -27,17 +27,17 @@ const resources = {
         exploreStates: "Explore States",
         discoverHeritage: "Discover India's Rich Cultural Heritage",
         discoverDifferently: "✦ DISCOVER INDIA DIFFERENTLY",
-experienceCulture: "Experience India's Culture in AR",
-cultureDescription: "Explore the traditions, festivals, food, art and heritage of India's diverse states through an immersive augmented reality experience.",
-exploreCulture: "Explore Culture →",
-startARScan: "◉ Start AR Scan",
+experienceCulture: "Experience India's Culture ",
+cultureDescription: "Explore the traditions, festivals, food, art and heritage of India's diverse states in an interactive way.",
+experienceCulture: "Experience India's Heritage →",
+startARScan: "◉ Start Scan",
 travelGuide: "🧭 Travel Guide",
 leaveReview: "★ Leave a Review",
 askAIGuide: "🤖 Ask AI Guide",
 
 indianHeritage: "Indian Heritage",
 heritageCardDesc: "Discover monuments, traditions, festivals & more.",
-arReady: "AR READY",
+arReady: "IMMERSIVE",
 
 traditions: "Traditions",
 traditionsDesc: "Explore India's unique traditions.",

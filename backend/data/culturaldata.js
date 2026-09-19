@@ -1433,3 +1433,18 @@ const makeStateRecord = (name, index) => {
 };
 
 module.exports = Object.keys(culturalHighlights).map(makeStateRecord);
+
+// const featuredStates = [
+//   "Bihar",
+//   "Chhattisgarh",
+//   "Gujarat",
+//   "Kerala",
+//   "Madhya Pradesh",
+//   "Punjab",
+//   "Rajasthan",
+//   "Tamil Nadu",
+//   "Uttar Pradesh",
+//   "West Bengal"
+// ];
+
+// module.exports = featuredStates.map(makeStateRecord);

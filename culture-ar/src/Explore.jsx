@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./index.css";
-import { Link } from "react-router-dom";
+import { Link , useNavigate} from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { getLocalizedStateName } from "./localizedData";
 import BackButton from "./backbutton";
@@ -91,6 +91,7 @@ const getStateImages = (states) => {
 };
  
 function Explore() {
+   const navigate = useNavigate();
   const { t, i18n } = useTranslation();
   const [states, setStates] = useState([]);
   const [search, setSearch] = useState("");
@@ -116,7 +117,12 @@ function Explore() {
   const stateImages = getStateImages(filteredStates);
   return (
     <div className="explore-page">
-      <BackButton />
+     <button
+  className="explore-back-btn"
+  onClick={() => navigate("/home-page-1", { replace: true })}
+>
+  ← Back
+</button>
 
       {/* HEADER */}
       <div className="explore-header">

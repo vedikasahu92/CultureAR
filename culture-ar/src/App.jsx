@@ -14,6 +14,7 @@ import ReviewPage from "./pages/ReviewPage";
 import Quiz from "./quiz";
 import Login from "./login";
 import Signup from "./signup";
+import HomePage1 from "./HomePage1";
 import exploreImage from "./assets/images/Explore delhi_.jpg";
 import reviewImage from "./assets/images/himachal pradesh.jpg";
 import tourPlanImage from "./assets/images/ladakh.jpg";
@@ -87,30 +88,6 @@ function Home() {
 
         <div className="logo">
           <span>✦</span> {t("siteName")}
-        </div>
-
-        <div className="nav-links">
-
-          <Link to="/">
-            {t("home")}
-          </Link>
-
-          <Link to="/explore">
-            {t("explore")}
-          </Link>
-
-          <Link to="/ar">
-            {t("scanner")}
-          </Link>
-
-          <Link to="/tourplan">
-            {t("tourPlan")}
-          </Link>
-
-          <Link to="/quiz">
-            Quiz
-          </Link>
-
         </div>
 
         {/* ================= LANGUAGE + LOGIN ================= */}
@@ -187,61 +164,11 @@ function Home() {
             <div className="hero-buttons">
 
               <Link
-                to="/explore"
+                to="/home-page-1"
                 className="primary-btn"
               >
                 {t("exploreCulture")}
               </Link>
-
-
-              <Link
-                to="/ar"
-                className="secondary-btn"
-              >
-                {t("startARScan")}
-              </Link>
-
-
-              <Link
-                to="/travel-guide"
-                className="secondary-btn"
-              >
-                {t("travelGuide")}
-              </Link>
-
-
-              <Link
-                to="/review"
-                className="secondary-btn"
-              >
-                {t("leaveReview")}
-              </Link>
-
-
-              {/* ================= ASK AI GUIDE ================= */}
-              <button
-                onClick={() => window.location.href = "/chatbot"}
-                className="ai-btn"
-                style={{
-                  backgroundColor: "#d96b27",
-                  color: "#fff",
-                  border: "none",
-                  padding: "12px 24px",
-                  borderRadius: "30px",
-                  fontWeight: "bold",
-                  fontSize: "0.95rem",
-                  cursor: "pointer",
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: "8px",
-                  boxShadow:
-                    "0 4px 12px rgba(217, 107, 39, 0.3)",
-                  transition:
-                    "transform 0.2s ease",
-                }}
-              >
-                {t("askAIGuide")}
-              </button>
 
             </div>
 
@@ -406,7 +333,7 @@ function Home() {
                 </span>
 
                 <span className="highlight-title">
-                  AR Fast
+                  Fast
                 </span>
 
               </div>
@@ -854,6 +781,11 @@ function App() {
         <Route
           path="/"
           element={<Home />}
+        />
+
+        <Route
+          path="/home-page-1"
+          element={<HomePage1 />}
         />
 
         <Route

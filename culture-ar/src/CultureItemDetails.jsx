@@ -325,7 +325,7 @@ if (
             to={`/culture/${stateName}/${category}`}
             className="item-premium-back"
           >
-            ← Back to Explore {info.title} of{" "}
+          ← Back to Explore {info.title} of{" "}
             {localizedStateName}
           </Link>
 
